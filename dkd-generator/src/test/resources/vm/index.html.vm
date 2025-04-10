@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>velocity快速入门</title>
+
+</head>
+
+<body>
+
+<h3>心怀梦想，坚持不懈，成功即在前方。${message}</h3>
+<br>
+##定义变量
+#set($name="velocity")
+
+##输出变量
+第一种情况：$name<br>
+第二种情况：${name}<br>
+#set($column = "order")
+
+第三种情况：${column}Service <br>
+
+##
+${region.id}
+$region.regionName
+<br>
+
+#set($list = ["春", "夏", "秋", "冬"])
+#foreach($item in $list)
+    $foreach.count $item
+#end
+
+    ## 遍历区域
+    #foreach($item in $regionList)
+    序号[$foreach.count],区域ID:$item.id,区域名称:$item.regionName <br>
+    #end
+<br>
+#set($score = 80)
+#if($score>=90)
+   优秀
+    #elseif($score>=60)
+    及格
+    #else
+    不及格
+#end
+
+</body>
+
+</html>

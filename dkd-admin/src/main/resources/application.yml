@@ -137,8 +137,8 @@ dromara:
     aliyun-oss:
       - platform: aliyun-oss-1 # 存储平台标识
         enable-storage: true  # 启用存储
-        access-key: LTAI5tAhpGis4VVMqZgiAaKM
-        secret-key: QHsCrLUOAarOQNDO92aUj4u26ZqWU4
+        access-key:
+        secret-key:
         end-point: oss-cn-beijing.aliyuncs.com
         bucket-name: dkd-cjj
         domain: https://dkd-cjj.oss-cn-beijing.aliyuncs.com/ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/
